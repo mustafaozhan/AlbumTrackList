@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		1ABDF1488309BA0B1055ED51 /* Pods_AlbumTrackList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1225C7BD54B1A93EB10CF9 /* Pods_AlbumTrackList.framework */; };
 		5C0AA69222BD700C00BF59E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0AA69122BD700C00BF59E8 /* AppDelegate.swift */; };
-		5C0AA69422BD700C00BF59E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0AA69322BD700C00BF59E8 /* ViewController.swift */; };
+		5C0AA69422BD700C00BF59E8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0AA69322BD700C00BF59E8 /* HomeViewController.swift */; };
 		5C0AA69722BD700C00BF59E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C0AA69522BD700C00BF59E8 /* Main.storyboard */; };
 		5C0AA69A22BD700C00BF59E8 /* AlbumTrackList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C0AA69822BD700C00BF59E8 /* AlbumTrackList.xcdatamodeld */; };
 		5C0AA69C22BD700D00BF59E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C0AA69B22BD700D00BF59E8 /* Assets.xcassets */; };
 		5C0AA69F22BD700D00BF59E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C0AA69D22BD700D00BF59E8 /* LaunchScreen.storyboard */; };
+		5C0AA6AD22BE479D00BF59E8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0AA6AC22BE479D00BF59E8 /* HomeViewModel.swift */; };
+		5C0AA6AF22BE47FF00BF59E8 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0AA6AE22BE47FF00BF59E8 /* Album.swift */; };
+		5C0AA6B122BE490C00BF59E8 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0AA6B022BE490C00BF59E8 /* Track.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,12 +24,15 @@
 		58782B8263C7EF5A786B7152 /* Pods-AlbumTrackList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlbumTrackList.debug.xcconfig"; path = "Target Support Files/Pods-AlbumTrackList/Pods-AlbumTrackList.debug.xcconfig"; sourceTree = "<group>"; };
 		5C0AA68E22BD700C00BF59E8 /* AlbumTrackList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumTrackList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C0AA69122BD700C00BF59E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5C0AA69322BD700C00BF59E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5C0AA69322BD700C00BF59E8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5C0AA69622BD700C00BF59E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C0AA69922BD700C00BF59E8 /* AlbumTrackList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlbumTrackList.xcdatamodel; sourceTree = "<group>"; };
 		5C0AA69B22BD700D00BF59E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C0AA69E22BD700D00BF59E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C0AA6A022BD700D00BF59E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C0AA6AC22BE479D00BF59E8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		5C0AA6AE22BE47FF00BF59E8 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		5C0AA6B022BE490C00BF59E8 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		87A0760022BA06394B45A563 /* Pods-AlbumTrackList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlbumTrackList.release.xcconfig"; path = "Target Support Files/Pods-AlbumTrackList/Pods-AlbumTrackList.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +69,7 @@
 		5C0AA69022BD700C00BF59E8 /* AlbumTrackList */ = {
 			isa = PBXGroup;
 			children = (
-				5C0AA6A822BD722100BF59E8 /* Main */,
+				5C0AA6A822BD722100BF59E8 /* Home */,
 				5C0AA6A722BD721300BF59E8 /* App */,
 				5C0AA6A622BD71DF00BF59E8 /* Resources */,
 			);
@@ -90,12 +96,39 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		5C0AA6A822BD722100BF59E8 /* Main */ = {
+		5C0AA6A822BD722100BF59E8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				5C0AA69322BD700C00BF59E8 /* ViewController.swift */,
+				5C0AA6AB22BE473A00BF59E8 /* Model */,
+				5C0AA6AA22BE473100BF59E8 /* ViewModel */,
+				5C0AA6A922BE472A00BF59E8 /* View */,
 			);
-			path = Main;
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5C0AA6A922BE472A00BF59E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C0AA69322BD700C00BF59E8 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C0AA6AA22BE473100BF59E8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5C0AA6AC22BE479D00BF59E8 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5C0AA6AB22BE473A00BF59E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C0AA6AE22BE47FF00BF59E8 /* Album.swift */,
+				5C0AA6B022BE490C00BF59E8 /* Track.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		6166B9E36418344149DEAB1B /* Pods */ = {
@@ -242,8 +275,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C0AA69A22BD700C00BF59E8 /* AlbumTrackList.xcdatamodeld in Sources */,
-				5C0AA69422BD700C00BF59E8 /* ViewController.swift in Sources */,
+				5C0AA69422BD700C00BF59E8 /* HomeViewController.swift in Sources */,
 				5C0AA69222BD700C00BF59E8 /* AppDelegate.swift in Sources */,
+				5C0AA6AD22BE479D00BF59E8 /* HomeViewModel.swift in Sources */,
+				5C0AA6AF22BE47FF00BF59E8 /* Album.swift in Sources */,
+				5C0AA6B122BE490C00BF59E8 /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
